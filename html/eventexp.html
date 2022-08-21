@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clk()
+        {
+            document.getElementById("p1").innerHTML="thinknext technologies";
+        }
+        function chng()
+        {
+            document.getElementById("p1").innerHTML="thinknext 1";
+        }
+        function ky1()
+        {
+            document.getElementById("p1").innerHTML="thinknext 2";
+        }
+        function ky2()
+        {
+            document.getElementById("p1").innerHTML="thinknext 3";
+        }
+        function ms1()
+        {
+            document.getElementById("p1").innerHTML="thinknext mouseover";
+        }
+    </script>
+</head>
+<body>
+    <p id="p1">thinknext</p>
+    <p onclick="clk()">click here</p>
+    <input type="text" onchange="chng()">
+    <input type="text" onkeydown="ky1()">
+    <input type="text" onkeyup="ky2()">
+    <p onmouseover="ms1()">thinknext mouse over</p>
+</body>
+</html>

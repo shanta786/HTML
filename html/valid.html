@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate()
+        {
+            if(document.form1.Fname.value=="")
+            {
+                alert("Please enter the first name");
+                document.form1.Fname.focus();
+                return false;
+            }
+            if(document.form1.email.value=="")
+            {
+                alert("Please enter the email");
+                document.form1.email.focus();
+                return false;
+            }
+            if((document.form1.PINcode.value=="") ||isNaN(document.form1.PINcode.value.length!=6))
+            {
+                alert("please enter the pincode");
+                document.form1.PINcode.focus();
+                return false;
+            }                 
+            
+        }
+    </script>
+</head>
+<body>
+    <form name="form1" onsubmit="return(validate())" >
+        fname<input type="text" name="Fname"><br>
+        email<input type="text" name="email"><br>
+        pincode<input type="text" name="PINcode"><br>
+        Country<select name="Country">
+            <option value="-1">select Country</option>
+            <option value="1">India</option>
+            <option value="2">USA</option>
+            <option value="3">UK</option>
+            <input type="submit" value="submit">
+
+    </form>
+</body>
+</html>

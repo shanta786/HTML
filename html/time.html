@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">clock</p>
+    <button onclick="myvar=setTimeout(date1,1000);">Start</button>
+    <button onclick="stopClock();">Stop</button>
+    <script>
+        function date1()
+        {
+            var d=new Date();
+            var e=d.toLocaleTimeString();
+            document.getElementById("p1").innerHTML=e;
+            myvar=setTimeout(date1,1000);
+
+        }
+        function stopClock()
+        {
+            clearTimeout(myvar);
+        }
+        //date1();
+    </script>
+</body>
+</html>

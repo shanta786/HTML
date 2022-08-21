@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add1()
+        {
+            var a=document.getElementById("txt1").value;
+            var b=document.getElementById("txt2").value;
+            val1=parseInt(a);
+            val2=parseInt(b);
+            var sum=val1+val2;
+            var d=document.getElementById("txt3");
+            d.value=sum;
+        }
+        function mul()
+        {
+            var a=document.getElementById("txt1").value;
+            var b=document.getElementById("txt2").value;
+            var mu=a*b;
+            var d=document.getElementById("txt3");
+            d.value=mu;
+        }
+        function div()
+        {
+            var a=document.getElementById("txt1").value;
+            var b=document.getElementById("txt2").value;
+            var mu=a/b;
+            var d=document.getElementById("txt3");
+            d.value=mu;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="txt1">
+    <input type="text" id="txt2">
+    <input type="text" id="txt3">
+    <input type="button" value="sum" onclick="add1()">
+    <input type="button" value="multiply" onclick="mul()">
+    <input type="button" value="division" onclick="div()">
+</body>
+</html>

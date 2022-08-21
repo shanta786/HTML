@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function load()
+        {
+            alert("thinknext");
+        }
+        function sb1()
+        {
+            alert("thinknext mohali");
+        }
+        function fc1()
+        {
+            document.getElementById("p1").innerHTML="thinknext technologies pvt ltd";
+        }
+        function fc2()
+        {
+            document.getElementById("p1").innerHTML="thinknext mohali";
+        }
+    </script>
+</head>
+<body onload="load()">
+    <form onsubmit="sb1">
+    <p id="p1">thinknext</p>
+    <input type="text" onfocus="fc1()">
+    <input type="text" onblur="fc2()">
+    <input type="submit"
+
+    </form>
+</body>
+</html>
